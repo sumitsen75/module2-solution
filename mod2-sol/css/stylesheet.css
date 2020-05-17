@@ -1,0 +1,157 @@
+body {
+width: 96%;
+margin: 0 auto;
+}
+
+#header{ 
+text-align : center;
+font-family : Comic Sans MS;
+font-size : 30px;
+padding-bottom: 30px;
+} 
+
+#content {
+	overflow: auto;
+}
+
+
+#head1{
+float:right;border:2px black solid; 
+background-color:salmon;
+font-size:16px;
+padding-left: 24px;
+padding-right: 24px;
+ padding-top: 1px; 
+padding-bottom: 1px;
+margin-top: -2px;
+margin-right: -2px;
+}
+
+#head2{
+float:right;
+border:2px black solid;
+background-color:crimson;
+font-size:16px;
+padding-left: 34px;
+padding-right: 34px;
+ padding-top: 1px; 
+padding-bottom: 1px;
+margin-top: -2px;
+margin-right: -2px;
+color: white;
+}
+
+#head3{
+float:right; 
+border:2px black solid; 
+background-color: moccasin;
+font-size:16px;
+padding-left: 34px;
+padding-right: 34px;
+padding-top: 1px; 
+padding-bottom: 1px;
+ margin-top: -2px; 
+margin-right: -2px;
+}
+
+
+.para1,.para2,.para3{
+ padding:10px;
+ text-align: justify;
+ font-size:14px;
+}
+
+
+.column1,.column2,.column3 {
+width: 31%;
+float: left;
+margin: 1%;
+font-family: "Comic Sans MS", cursive, sans-serif;
+ 
+border: 2px solid black;  
+background-size: auto;
+overflow : hidden;
+}
+
+.column3 {
+	margin-right: 0%;
+}
+
+
+#feature, .article {
+height: 10em;
+margin-bottom: 1em;
+background-color: darkgray;
+}
+
+@media(max-width: 768px){
+  
+body {
+width: 82%;
+margin: 0 auto;
+}
+
+#header{ 
+text-align : center;
+padding-bottom: 20px;
+} 
+
+#content {
+	overflow: auto;
+}
+
+.column1,.column2,.column3 {
+width: 98%;
+float: none;
+margin: 1%;
+overflow : hidden;
+
+}
+
+
+#feature, .article {
+height: 10em;
+margin-bottom: 1em;
+background-color: darkgray;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+body {
+width: 96%;
+margin: 0 auto;
+}
+
+#header{ 
+text-align : center;
+font-family : Comic Sans MS;
+font-size : 30px;
+padding-bottom: 30px;
+} 
+
+#content {
+	overflow: auto;
+}
+
+.column1,.column2{
+width: 45%;
+float: left;
+margin: 2%; 
+overflow : hidden;
+}
+
+.column3 {
+	width: 95%;
+	margin: 2%;
+	height: 10%;
+
+}
+
+#feature, .article {
+height: 10em;
+margin-bottom: 1em;
+background-color: darkgray;
+}
+}

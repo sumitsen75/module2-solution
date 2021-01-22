@@ -22,14 +22,14 @@
 
         .logo {
                       
-            margin-left: 20px;
+           margin-left: 20px;
+           margin-top: 14px;
             
         }
 
         .logo img{
             
-            margin-left: 20px;
-        }
+                    }
 
         .cname {
             
@@ -46,12 +46,15 @@
             font-size: 14px;
             font-family:'Work Sans', sans-serif;
             border-radius: 40px;
-            background: rgb(255,239,0);
-            background: linear-gradient(90deg, rgba(255,239,0,1) 0%, rgba(185,227,40,1) 46%, rgba(101,226,15,1) 100%);
+            background: rgb(148,222,238);
+            background: linear-gradient(90deg, rgba(148,222,238,1) 0%, rgba(96,162,219,1) 27%, rgba(67,84,208,1) 63%, rgba(92,42,199,1) 100%);
+            box-shadow: 3px 3px 3px #00CED1;
 
         }
 
-        
+        #arrow{
+            border-radius: 100px;
+        }
 
 
         .menu {
@@ -75,12 +78,13 @@
         .menu  ul li{
             list-style: none;
             text-transform: uppercase;
-            font-size: 14px;
+            font-size: 1vw;
             font-family: 'Work Sans', sans-serif;
         }
         
         .menu ul li a{
             color: white;
+
         }
 
         .menu ul li button{
@@ -93,8 +97,8 @@
         }
 
         .vector{
-             margin-left: 100px; 
-             margin-top: 80px;             
+             padding-left:30px;
+             padding-top: 40px;                  
              width: 40%;  
              display: flex;
 
@@ -102,13 +106,14 @@
         }
 
         .vector img{
-            height: 300px;            
+            width:80%;
+                    
           
 
         }
 
         .content{
-            width: 70%; 
+            width: 60%; 
             padding-top: 100px;  
             padding-right: 10px; 
             display: flex;
@@ -121,12 +126,12 @@
            
             color: white;
             padding-bottom: 18px; 
-            font-size: 45px;
+            font-size: 4vw;
             font-family: 'Chakra Petch', sans-serif;
         }
 
         .content p{
-            font-size: 20px;
+            font-size: 1.2vw;
             padding-right: 20px;
             text-align: center;
             color: white;
@@ -157,3 +162,52 @@
             width: 350px;
             font-family: 'Balsamiq Sans', cursive;
         }
+
+         
+        @keyframes arrowmove {
+            0%   {left:0px; top:0px;}
+
+            50% {left:0px ;top:60px;}
+
+            100% {left:0px; top: 0px; }
+          
+       } 
+
+       .arrow {
+           position: relative;
+           animation-name: arrowmove;
+           animation-duration: 4s; 
+           animation-iteration-count: infinite; 
+           animation-timing-function:ease;
+       }
+
+      
+      .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: #008CBA;
+     }
+
+     .carousel-item active:hover .overlay {
+       opacity: 1;
+     }
+
+     .text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+  
